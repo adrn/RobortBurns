@@ -72,7 +72,7 @@ def train(corpus_file):
         print('Iteration', iteration)
         model.fit(X, y, batch_size=128, nb_epoch=1)
         model.save_weights(join(cache_path,
-                           'weights_{0:05d}.h5'.format(iteration)))
+                           'weights_{0:03d}.h5'.format(iteration)))
 
 def sample(weights_file, seed, output_file, nchars):
 
