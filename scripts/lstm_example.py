@@ -2,20 +2,20 @@
 
 # Standard library
 import os
+from os.path import exists, join, abspath
 import sys
 import random
 
 # Third-party
 from keras.models import Sequential
-from keras.layers import Dense, Activation
+from keras.layers import Dense, Activation, Dropout
 from keras.layers import LSTM
-# from keras.optimizers import RMSprop
 import numpy as np
 
 def main(corpus_file):
 
     # Path to corpus file
-    path = os.path.abspath(corpus_file)
+    path = abspath(corpus_file)
     cache_path = os.path.dirname(path)
     with open(path) as f:
         text = f.read().lower()
