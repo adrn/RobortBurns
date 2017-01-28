@@ -3,9 +3,7 @@ name: robortburns
 dependencies:
   - beautifulsoup4
   - numpy
-  - matplotlib
   - h5py
-  - scikit-learn
   - pip
   - pip:
     - Theano
