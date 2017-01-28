@@ -65,6 +65,11 @@ def sample(seed, nchars):
 
     generated = ""
     start_index = random.randint(0, len(text) - maxlen - 1)
+
+    # find whitespace closest to start index
+    for i in range(128):
+        if text[start_index] != ' ':
+            start_index += 1
     start_sentence = text[start_index: start_index + maxlen]
     generated += start_sentence
 
@@ -91,4 +96,4 @@ def sample(seed, nchars):
         if next_char == '.' and break_next:
             break
 
-    return generated.lstrip(start_sentence)
+    return generated

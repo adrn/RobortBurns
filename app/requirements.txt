@@ -1,2 +1,14 @@
 Theano
 keras
+Flask
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+PasteDeploy
+python-dateutil
+pytz
+PyYAML
+six
+Werkzeug
+wheel
