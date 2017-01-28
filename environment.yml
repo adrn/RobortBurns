@@ -1,0 +1,10 @@
+name: robortburns
+
+channels:
+  - astropy
+
+dependencies:
+  - beautifulsoup4
+  - numpy
+  - matplotlib
+  - h5py
