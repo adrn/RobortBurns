@@ -29,7 +29,7 @@ def main(index=None):
     with open(corpus_file, "w") as f:
         f.write(fulltext)
 
-    chars = sorted(list(set(fulltext)))
+    chars = sorted(list(set(fulltext.lower())))
     print('total chars:', len(chars))
     char_indices = dict((c, i) for i, c in enumerate(chars))
     indices_char = dict((i, c) for i, c in enumerate(chars))
